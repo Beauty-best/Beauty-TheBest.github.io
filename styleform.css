@@ -1,0 +1,164 @@
+.navbar {
+    background-color: #ff99cc;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #ffff;
+}
+
+.nav-link {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color:  black; 
+}
+.card-body {
+    text-align: justify;
+}
+
+.card {
+    border: 1px solid #ddd; /* tambahkan border tipis */
+    border-radius: 8px; /* tambahkan sudut melengkung */
+    overflow: hidden; /* hindari overflow konten */
+    transition: transform 0.2s, box-shadow 0.2s; /* transisi transform dan shadow */
+    height: 100%; /* tinggi kartu */
+    display: flex; /* menggunakan flexbox untuk mengatur konten */
+    flex-direction: column; /* tata letak vertikal */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* efek mengangkat sedikit saat dihover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* shadow saat dihover */
+}
+
+.card-img-top {
+    width: 100%; /* lebar gambar penuh */
+    height: 280px; /* tinggi gambar */
+    object-fit: cover; /* pastikan gambar tetap proporsional tanpa terpotong */
+    border-top-left-radius: 8px; /* sudut melengkung untuk gambar */
+    border-top-right-radius: 8px; /* sudut melengkung untuk gambar */
+}
+
+.card-body {
+    padding: 20px; /* jarak padding dalam card-body */
+    text-align: justify; /* ratakan teks */
+    flex: 1; /* agar konten dapat diperluas ke seluruh tinggi kartu */
+}
+
+.card-title {
+    font-size: 20px; /* ukuran font judul */
+    margin-bottom: 10px; /* jarak margin bawah judul */
+}
+
+.card-text {
+    font-size: 16px; /* ukuran font teks */
+    color: #666; /* warna teks abu-abu */
+}
+
+/* Form review */
+#reviewForm {
+    width: 1000; /* lebar maksimum form */
+    margin: auto; /* pusatkan form */
+    background-color: #fff; /* latar belakang putih */
+    padding: 20px; /* jarak padding dalam form */
+    border-radius: 8px; /* radius border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* shadow form */
+}
+
+#reviewForm h2 {
+    color: #f40c71; /* warna teks judul pink */
+    font-size: 28px; /* ukuran font judul */
+    margin-bottom: 20px; /* jarak margin bawah */
+}
+
+#reviewForm label {
+    color: #666; /* warna teks label */
+    font-size: 18px; /* ukuran font label */
+    margin-bottom: 8px; /* jarak margin bawah */
+}
+
+#reviewForm input[type="text"],
+#reviewForm textarea {
+    width: 100%; /* lebar penuh */
+    padding: 10px; /* jarak padding dalam input */
+    font-size: 16px; /* ukuran font input */
+    border: 1px solid #ccc; /* border input */
+    border-radius: 4px; /* radius border */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* shadow input */
+    margin-bottom: 15px; /* jarak margin bawah */
+}
+
+#reviewForm button[type="submit"] {
+    display: block; /* tampilan block */
+    width: 100%; /* lebar penuh */
+    padding: 12px; /* jarak padding dalam tombol */
+    font-size: 18px; /* ukuran font tombol */
+    background-color: #f40c71; /* warna background tombol pink */
+    color: #fff; /* warna teks putih */
+    border: none; /* hilangkan border */
+    border-radius: 4px; /* radius border */
+    cursor: pointer; /* pointer cursor */
+    transition: background-color 0.3s; /* transisi hover */
+}
+
+#reviewForm button[type="submit"]:hover {
+    background-color: #ff4d92; /* warna background hover */
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar .menu {
+        display: none; /* sembunyikan menu di layar kecil */
+    }
+
+    .navbar {
+        flex-direction: column; /* ubah arah menu menjadi vertikal */
+        align-items: center; /* pusatkan menu di tengah */
+    }
+
+    .navbar .logo {
+        margin-bottom: 10px; /* jarak margin bawah logo */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 0 15px; /* jarak padding kiri kanan di layar sedang */
+    }
+
+    .card {
+        margin-bottom: 20px; /* jarak margin bawah card di layar sedang */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .carousel-item {
+        height: 300px; /* ubah tinggi gambar carousel di layar kecil */
+    }
+
+    .album h1 {
+        font-size: 24px; /* ubah ukuran font judul album di layar kecil */
+    }
+
+    .card {
+        margin-bottom: 15px; /* jarak margin bawah card di layar kecil */
+    }
+
+    #reviewForm {
+        padding: 15px; /* jarak padding dalam form di layar kecil */
+    }
+
+    #reviewForm h2 {
+        font-size: 24px; /* ubah ukuran font judul form di layar kecil */
+    }
+
+    #reviewForm input[type="text"],
+    #reviewForm textarea {
+        font-size: 14px; /* ubah ukuran font input di layar kecil */
+    }
+
+    #reviewForm button[type="submit"] {
+        font-size: 16px; /* ubah ukuran font tombol di layar kecil */
+    }
+}
