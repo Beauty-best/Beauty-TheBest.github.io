@@ -11,6 +11,15 @@ header {
     color: #ffff;
 }
 
+.navbar-nav {
+    flex-direction: row;
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .nav-link {
     color: #ffffff;
     transition: color 0.3s;
@@ -110,35 +119,32 @@ header {
     background-color: #ff4d92; /* warna background hover */
 }
 
-/* Responsiveness */
-@media screen and (max-width: 768px) {
-    .navbar .menu {
-        display: none; /* sembunyikan menu di layar kecil */
-    }
-
+@media screen and (max-width: 600px) {
     .navbar {
-        flex-direction: column; /* ubah arah menu menjadi vertikal */
-        align-items: center; /* pusatkan menu di tengah */
+        padding: 8px 0; /* Atur padding navbar di layar kecil */
     }
 
     .navbar .logo {
-        margin-bottom: 10px; /* jarak margin bawah logo */
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .container {
-        padding: 0 15px; /* jarak padding kiri kanan di layar sedang */
+        margin-bottom: 5px; /* Sesuaikan margin bawah logo di layar kecil */
     }
 
-    .card {
-        margin-bottom: 20px; /* jarak margin bawah card di layar sedang */
-    }
-}
-
-@media screen and (max-width: 600px) {
     .carousel-item {
-        height: 300px; /* ubah tinggi gambar carousel di layar kecil */
+        height: 250px; /* Ubah tinggi gambar carousel di layar kecil */
+    }
+
+    .album h1 {
+        font-size: 20px; /* Ubah ukuran font judul album di layar kecil */
+    }
+
+    /* Atur tata letak teks di atas carousel */
+    .carousel-caption {
+        top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        max-height: 300px;
     }
 
     .album h1 {
